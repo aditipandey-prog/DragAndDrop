@@ -16,15 +16,15 @@ for(list of lists){
             e.preventDefault
            
             if(selected!=null){
-                emptied.appendChild(selected);
+                emptied.appendChild(selected);//use to append the selected element in the drop box
                 
             }
             selected=null;
             let banner= document.getElementsByClassName('banner');
-            banner[0].classList.add('visible');
+            banner[0].classList.add('visible');// will make the successfull banner visible
             setTimeout(function(){
-                banner[0].classList.remove('visible');
-            },1000);
+                banner[0].classList.remove('visible'); //will make the successfull banner disappear after 1 sec
+            },1500);
         });
     });
     //  remove css classes from emptied class and list so that they can go back to their normal size
