@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Drag And Drop</title>
+</head>
+<body>
+    
+    <div class="container" id="header">
+        <div class="container_banner">
+            <div class="banner">
+                <img src="./assest/checked.png" alt="Success">
+                <p>You have Successfully drop the item</p>
+            </div>
+        </div>
+        
+            <div class="box" id="fill">
+                <div class="fill_list" draggable="true">
+                    <p>
+                        Hello There
+                    </p>
+                </div>
+                <div class="fill_list" draggable="true">
+                    <p>
+                        Hello There
+                    </p>
+                </div>
+                <div class="fill_list" draggable="true">
+                    <p>
+                        Hello There
+                    </p>
+                </div>
+                <div class="fill_list" draggable="true">
+                    <p>
+                        Hello There
+                    </p>
+                </div>
+            </div>
+            <!--Target Box to drop items-->
+            <div class="box" id="empty">
+               
+            </div>
+            
+        <!--Box containing draggable items-->
+</div>
+<div class="footer">
+    <div class="footer_button">
+        <button id="btn">Reset</button>
+    </div>
+</div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
