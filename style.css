@@ -1,0 +1,114 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    max-width:100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2C3639;
+    /*flex-direction: column;*/
+    /* position: absolute; */
+}
+
+/* .dragandDrop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+} */
+.box{
+    height:450px;
+    width: 450px;
+    border: 1px solid #000;
+    margin: 1rem;
+    background-color: #E3F2C1;
+    border: 0px solid transparent;
+}
+
+.container_banner{
+    position: absolute;
+}
+.banner{
+    bottom: 280px;
+    position:relative;
+    display: flex;
+   background-color: #AAC8A7;
+   border-radius: 25px;
+   margin: 20px;
+  display: none;
+}
+.banner p{
+    flex: 1;
+     display: flex;
+     justify-content: center;
+     margin-right: 16px;
+}
+.banner img{
+    margin: 16px;
+    width: 20px;
+    height: 20px;
+}
+.fill_list{
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #C9DBB2;
+    margin: 1rem;
+}
+.fill_list p{
+    font-size: 1.5rem;
+}
+.visible{
+    display: flex;
+    
+}
+.footer{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.footer_button button{
+    position: absolute;
+    bottom: 80px;
+    left: 45%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0px solid transparent;
+    background-color: #AAC8A7;
+    color:#000;
+    font-size: 20px;
+}
+.bigger{
+    transform: scale(1.05);
+    border: 2px dotted #d0e69e;
+}
+.dragging{
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer_button button{
+        position: absolute;
+        bottom: 30px;
+    }
+} 
+@media screen and (max-width: 600px) {
+    .footer_button button{
+        position: absolute;
+        bottom: 30px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .fill_list p{
+        font-size: 1rem;
+    }
+    .box{
+        max-width: 80%;
+    }
+
+} 
