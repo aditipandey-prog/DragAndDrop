@@ -7,24 +7,18 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #2C3639;
-    /*flex-direction: column;*/
-    /* position: absolute; */
+    background-color: #4C3A51;
+    
 }
 
-/* .dragandDrop{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-} */
 .box{
     height:450px;
     width: 450px;
     border: 1px solid #000;
     margin: 1rem;
-    background-color: #E3F2C1;
+    background-color: #774360;
     border: 0px solid transparent;
+    border-radius: 10px;
 }
 
 .container_banner{
@@ -34,7 +28,7 @@ body{
     bottom: 280px;
     position:relative;
     display: flex;
-   background-color: #AAC8A7;
+   background-color: #E7AB79;
    border-radius: 25px;
    margin: 20px;
   display: none;
@@ -54,11 +48,13 @@ body{
     padding-left: 10px;
     display: flex;
     justify-content: center;
-    background-color: #C9DBB2;
+    background-color: #B25068;
     margin: 1rem;
 }
 .fill_list p{
     font-size: 1.5rem;
+    color: beige;
+    
 }
 .visible{
     display: flex;
@@ -78,28 +74,39 @@ body{
     padding: 10px;
     border-radius: 10px;
     border: 0px solid transparent;
-    background-color: #AAC8A7;
+    background-color: #E7AB79;
     color:#000;
     font-size: 20px;
 }
 .bigger{
     transform: scale(1.05);
-    border: 2px dotted #d0e69e;
+    border: 2px dotted #fff;
 }
 .dragging{
     opacity: 0.5;
 }
-
+@media screen and (max-width:1520px) {
+    .footer_button button{
+        position: absolute;
+        bottom: 25px;
+        left: 48%;
+    }
+    
+}
 @media screen and (max-width: 1024px) {
     .footer_button button{
         position: absolute;
         bottom: 30px;
     }
+    
 } 
 @media screen and (max-width: 600px) {
     .footer_button button{
-        position: absolute;
-        bottom: 30px;
+        /* position: absolute; */
+        bottom:10px;
+        padding:5px 8px;
+        margin: 2px;
+        font-size: 15px;
     }
     .container{
         flex-direction: column;
@@ -109,6 +116,21 @@ body{
     }
     .box{
         max-width: 80%;
+        height:275px;
+        min-height: 50%;
+        margin: 0.5rem;
     }
-
+    .banner{
+        
+        margin: 5px;
+        bottom: 310px;
+    }
+    .banner img{
+        margin: 10px;
+        width: 15px;
+        height: 15px;
+    }
+    .banner p{
+        margin: 10px;
+    }
 } 
